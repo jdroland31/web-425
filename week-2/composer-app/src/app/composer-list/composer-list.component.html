@@ -1,0 +1,29 @@
+<!--
+Title: Assignment 2.4 - Composer App;
+Author: Professor Krasso ;
+Date: 1/11/2021;
+Modified By: Jonathan Roland;
+Description: This program demonstrates an understanding of both navigation using Angular router and data binding;
+-->
+
+<!-- Here we display a table of composers. -->
+<div class="row">
+  <div class="col-sm-12">
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Full Name</th>
+          <th>Genre</th>
+        </tr>
+      </thead>
+      <!-- Here we use an ngFor loop to fill in the table with full name and genre information. -->
+      <tbody *ngFor="let composer of composers">
+        <tr>
+          <!-- The fullName and genre attributes are gotten by extension through dot notation here. -->
+          <td>{{ composer.fullName }}</td>
+          <td>{{ composer.genre }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

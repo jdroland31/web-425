@@ -1,0 +1,34 @@
+<!--
+Title: Assignment 2.4 - Composer App;
+Author: Professor Krasso ;
+Date: 1/11/2021;
+Modified By: Jonathan Roland;
+Description: This program demonstrates an understanding of both navigation using Angular router and data binding;
+ -->
+
+<!-- display a nav bar that uses routerLink to offer navigation via Router -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" routerLink="/composer-list">Composer List</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/about">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/contact">Contact</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container">
+  <h2>Exercise 2.4 - Composer App</h2>
+  <hr>
+  <br>
+  <div class="row">
+    <div class="col-sm-12">
+      <!-- display the correct html code based on navigation and router with this router-outlet element -->
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
