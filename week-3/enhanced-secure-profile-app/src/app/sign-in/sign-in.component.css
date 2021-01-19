@@ -1,0 +1,16 @@
+/*
+ * Title: Exercise 3.4 - Guarding Routes
+ * Author: Professor Krasso
+ * Date: 1/18/2021
+ * Modified By: Jonathan Roland
+ * Description: This program demonstrates route guarding
+*/
+
+/* This file acts the style sheet for the sing-in component */
+
+/* Below are additional styles for the sign-in container */
+.signin-container {
+  width: 35%;
+  margin: 0 auto;
+  margin-top: 10%;
+}

@@ -1,0 +1,32 @@
+<!--
+ * Title: Exercise 3.4 - Guarding Routes
+ * Author: Professor Krasso
+ * Date: 1/18/2021
+ * Modified By: Jonathan Roland
+ * Description: This program demonstrates route guarding
+-->
+
+<!-- This component displays personal details instantiated in my-details.component.ts -->
+<ul class="list-group list-group-flush">
+  <li class="list-group-item">
+    <h5>Name</h5>
+    <p>{{ myProfile.fullName }}</p>
+  </li>
+  <li class="list-group-item">
+    <h5>Favorite Food</h5>
+    <p>{{ myProfile.favoriteFood }}</p>
+  </li>
+  <li class="list-group-item">
+    <h5>Favorite Color</h5>
+    <p>{{ myProfile.favoriteColor }}</p>
+  </li>
+  <li class="list-group-item">
+    <h5>Keywords</h5>
+    <!-- This area outputs the keywords using a loop. -->
+    <span *ngFor="let word of myProfile.keywords">
+      {{ word }}
+      <br>
+    </span>
+  </li>
+</ul>
+

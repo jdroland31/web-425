@@ -1,0 +1,40 @@
+<!--
+ * Title: Exercise 3.4 - Guarding Routes
+ * Author: Professor Krasso
+ * Date: 1/18/2021
+ * Modified By: Jonathan Roland
+ * Description: This program demonstrates route guarding
+-->
+
+<!-- This component displays both personal details and profile picture. -->
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Contact</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container">
+  <br>
+  <br>
+  <h2>Exercise 3.4 - Guarding Routes</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <!-- Profile Image -->
+      <app-my-image></app-my-image>
+    </div>
+    <div class="col-md-8">
+      <!-- Personal Details -->
+      <app-my-details></app-my-details>
+    </div>
+  </div>
+</div>
+
