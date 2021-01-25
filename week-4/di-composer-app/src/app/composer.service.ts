@@ -1,6 +1,16 @@
+/*============================================;
+Title: Exercise 4.2 - Inversion of Control and Dependency Injection;
+Author: Professor Krasso ;
+Date: 1/24/2021;
+Modified By: Jonathan Roland;
+Description: This program demonstrates an understanding of dependency injection;
+===========================================*/
+
+// This service takes the place of the class previously used.
+
 import { Injectable } from '@angular/core';
 import{ IComposer } from './composer.interface';
-
+// This injectable statement means Angular can use this for dependency injection.
 @Injectable({
   providedIn: 'root'
 })

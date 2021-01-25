@@ -1,9 +1,9 @@
 /*============================================;
-Title: Assignment 3.2 - Passing Data to Routes, Part 1;
+Title: Exercise 4.2 - Inversion of Control and Dependency Injection;
 Author: Professor Krasso ;
-Date: 1/18/2021;
+Date: 1/24/2021;
 Modified By: Jonathan Roland;
-Description: This program demonstrates an understanding of passing data to routes;
+Description: This program demonstrates an understanding of dependency injection;
 ===========================================*/
 
 // This file performs the core work of importing the Component class from core and setting the app up for export.
