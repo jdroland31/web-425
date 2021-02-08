@@ -1,0 +1,44 @@
+<!--
+ * Title: Assignment 6.2 - Input/Output Properties, Part 1;
+ * Author: Professor Krasso;
+ * Date: 2/7/2021;
+ * Modified By: Jonathan Roland;
+ * Description: This program demonstrates an understanding of passing data from a child to a parent component via Output;
+-->
+
+<!-- This file defines a book display using Angular Material for layout -->
+
+<div fxLayout="column wrap">
+  <h2 fxFlex class="green">Top 5 Favorite Books</h2>
+  <!-- Here we use books as the data source for this Material table. -->
+  <table style="width: 100%; padding: 5px;" fxFlex mat-table [dataSource]="books" class="mat-elevation-z8">
+    <!-- Here we use the header from the component to fill the header. -->
+    <tr mat-header-row *matHeaderRowDef="header"></tr>
+    <!-- Here we create the needed number of rows by looping through the header array. -->
+    <tr mat-row *matRowDef="let row; columns: header"></tr>
+    <ng-container matColumnDef="isbn">
+        <th mat-header-cell *matHeaderCellDef>ISBN</th>
+        <!-- The table header cells are filled by iterating over the contents of header. -->
+        <td mat--cell *matCellDef="let element">
+          <!-- Each cell contains an on click event listener for the book details. -->
+          <a class="a-link blue" (click)="showBookDetails(element.isbn)">
+            {{ element.isbn }}
+          </a>
+        </td>
+    </ng-container>
+    <!-- The remaining columns are iterated and filled out similarly for title, num of pages, and authors, though without the click listener as with the ISBN -->
+    <ng-container matColumnDef="title">
+      <th mat-header-cell *matHeaderCellDef>Title</th>
+      <td mat-cell *matCellDef="let element"> {{ element.title }}</td>
+    </ng-container>
+    <ng-container matColumnDef="numOfPages">
+      <th mat-header-cell *matHeaderCellDef>Number of pages</th>
+      <td mat-cell *matCellDef="let element"> {{ element.numOfPages }}</td>
+    </ng-container>
+    <ng-container matColumnDef="authors">
+      <th mat-header-cell *matHeaderCellDef>Authors</th>
+      <!-- Here we use commas as a delimiter to print multiple authors if needed. -->
+      <td mat-cell *matCellDef="let element"> {{ element.authors.join(', ')}}</td>
+    </ng-container>
+  </table>
+</div>
