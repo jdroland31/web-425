@@ -1,0 +1,26 @@
+<!--
+ * Title: Exercise 8.2 - Server-Side Communications;
+ * Author: Professor Krasso;
+ * Date: 2/22/2021;
+ * Modified By: Jonathan Roland;
+ * Description: This program demonstrates an understanding of API requests with HttpClientModule and HttpClient object;
+-->
+
+<!-- This file uses Material layout to create a child view for displaying a wishlist of book items. -->
+
+<div fxLayout="column">
+  <app-wishlist-create fxFlex (addItemEmitter)="updateItemsHandler($event)"></app-wishlist-create>
+  <br/>
+  <br/>
+  <div>
+    <mat-list fxFlex *ngIf="items && items.length > 0">
+      <mat-list-item *ngFor="let item of items">
+        <div mat-line>Title: {{ item.title }}</div>
+        <div mat-line>Authors: {{ item.authors }}</div>
+      </mat-list-item>
+    </mat-list>
+    <div fxFlex *ngIf="!items || items.length === 0">
+      <h2 style="text-align: center">Your wish list is empty.</h2>
+    </div>
+  </div>
+</div>

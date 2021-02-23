@@ -1,0 +1,50 @@
+/*
+ * Title: Exercise 8.2 - Server-Side Communications;
+ * Author: Professor Krasso
+ * Date: 2/22/2021
+ * Modified By: Jonathan Roland
+ * Description: This program demonstrates an understanding of API requests with HttpClientModule and HttpClient object;
+*/
+
+/* This file acts the style sheet for the application */
+
+@import './theme';
+
+html, body {
+  height: 100%;
+  color: rgba(255,255,0.7) !important;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.blue{
+  color: #2196F3
+}
+
+.green{
+  color: #66BB6A;
+}
+
+.attribution-link{
+  text-decoration: none;
+  color: white;
+}
+
+.attribution-link:hover{
+  text-decoration: underline;
+}
+
+.card-title-icon{
+  text-align: center;
+}
+
+.card-title-icon, .mat-icon {
+  font-size: 72px;
+}
+
+.align-center{
+  text-align: center;
+}
